@@ -6,7 +6,7 @@
 
 <div class="wrapper">
 	<div class="message-container">
-		<div class="message-box">寿司オンラインショッピングにようこそ！</div>
+		<div class="message-box">寿司オンラインショッピングにようこそ！！</div>
 	</div>
 </div>
 
