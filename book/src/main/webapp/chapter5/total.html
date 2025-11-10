@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Servlet/JSP Samples</title>
+</head>
+
+<body>
+
+	<form id="calcForm" action="total" method="post">
+		<input type="text" name="price" id="price">
+		円×
+		<input type="text" name="count" id="count">
+		個＝
+		<input type="submit" value="計算">
+	</form>
+
+</body>
+
+<script>
+	document.getElementById("calcForm").addEventListener("submit", function (e) {
+		const price = document.getElementById("price").value;
+		const count = document.getElementById("count").value;
+
+		if (isNaN(price) || isNaN(count) || price.trim() === "" || count.trim() === "") {
+			alert("価格と個数には数値を入力してください。");
+			e.preventDefault(); // フォーム送信をキャンセル
+		}
+	});
+</script>
+
+</html>

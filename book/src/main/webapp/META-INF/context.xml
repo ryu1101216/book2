@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<!-- 上記はEclipseの警告を消すための記述です。 -->
+
+<Context reloadable="true">
+	<!-- H2 Database -->
+	<Resource
+		name="jdbc/book"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="org.h2.Driver"
+		url="jdbc:h2:tcp://localhost/~/book"
+		username="sa"
+		password=""
+	/>
+	
+	<!-- MySQL -->
+	<Resource
+        auth="Container"
+        driverClassName="com.mysql.jdbc.Driver"
+        name="jdbc/test"
+        username="root"
+        password="root"
+        type="javax.sql.DataSource"
+        url="jdbc:mysql://localhost/test" />
+         
+</Context>
+
+<!--<Context reloadable="true">-->
+<!--	<Resource-->
+<!--		name="jdbc/test"-->
+<!--		auth="Container"-->
+<!--		type="javax.sql.DataSource"-->
+<!--		driverClassName="org.h2.Driver"-->
+<!--		url="jdbc:h2:tcp://localhost/~/test"-->
+<!--		username="sa"-->
+<!--		password=""-->
+<!--	/>-->
+<!--</Context>-->
+
+<!--  <Context docBase="DBconnect"-->
+<!--           path="/DBconnect"-->
+<!--           reloadable="true"-->
+<!--           source="org.eclipse.jst.jee.server:DBconnect">-->
+<!--    <Resource-->
+<!--             auth="Container"-->
+<!--             driverClassName="com.mysql.jdbc.Driver"-->
+<!--             name="jdbc/test"-->
+<!--             username="root"-->
+<!--             password="root"-->
+<!--             type="javax.sql.DataSource"-->
+<!--             url="jdbc:mysql://localhost/test" />-->
+<!--  </Context>-->
+
